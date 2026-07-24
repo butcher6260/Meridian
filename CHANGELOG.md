@@ -134,3 +134,11 @@ Version history. For an overview of what the app is, see [whatismeridian.md](wha
 - **Short sessions stop contradicting themselves** — a session of five minutes or less would announce it was ending five minutes before it had started. Those now send only their start notification.
 - **A session's notes arrive with it** — the note used to be a second notification sent in the same instant as the start, which meant it replaced the start banner before you could read it. Both now share one notification.
 - **Pomodoro tells you it started** — pressing Start now confirms it. Start, Pause and Resume are always banners and never the looping alarm, since you are looking straight at the app when they fire.
+
+## v1.11.1
+
+- **Overlapping sessions can't be created any more** — only one of the ways to add a block actually checked for a clash, and the check it used only caught blocks with the *same name and the same start time*. Two differently named sessions sitting on top of each other went straight in, and then fired their notifications over one another. Every route now checks: both editors, both "new block" sheets, calendar imports and the AI. Blocks that merely touch — one ending exactly as the next begins — are still allowed.
+- **Imports say what they skipped** — bringing in a calendar that clashes with your schedule now reports "Added 12 block(s) — 3 skipped (overlapping)" instead of silently stacking them.
+- **Asking the AI to move a session to a date can't lose it** — it deleted the original before checking whether the new slot was free, so a rejected move destroyed the block it was moving. It checks first now.
+- **The Cmd+V hint stays out of the way** — it used to sit on top of the Copy and Delete buttons and stay there indefinitely. It now sits in the empty space of the selection strip and fades after five seconds. Your copied blocks stay on the clipboard either way.
+- **Clearer buttons** — the day-level actions now read "Copy Day" and "Delete Day", and the selection ones count what you picked: "Delete 3 sessions", "Copy 3 sessions".
